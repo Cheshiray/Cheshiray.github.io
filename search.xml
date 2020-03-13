@@ -35,8 +35,7 @@
   <entry>
     <title>test</title>
     <url>/2020/03/13/test/</url>
-    <content><![CDATA[<p><img src="/2020/03/13/test/sum.png" alt></p>
-]]></content>
+    <content><![CDATA[<img src="/2020/03/13/test/sum.PNG" class title="This is an test image">]]></content>
   </entry>
   <entry>
     <title>DS_week2</title>
