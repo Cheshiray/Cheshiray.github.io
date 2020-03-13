@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>DS_week3</title>
+    <url>/2020/03/14/Data%20Structure3/</url>
+    <content><![CDATA[<h3 id="顺序表的局限性"><a href="#顺序表的局限性" class="headerlink" title="顺序表的局限性"></a>顺序表的局限性</h3><a id="more"></a>
+<ol>
+<li>若要为线性表扩充存储空间，则需重新创建一个地址连续的更大的存储空间，并把原有的数据元素都复制到新的存储空间中。</li>
+<li>因为顺序存储要求逻辑上相邻的数据元素，在物理存储位置上也是相邻的，这就使得要增删数据元素会引起平均约一半的数据元素的移动。<br>&emsp;&emsp;所以，顺序表最适合表示“静态”线性表，即线性表一旦形成以后，就很少进行插入与删除操作，例如文件的目录，一般进行查找操作。对于需要频繁执行插入和删除操作的“动态”线性表，通常采用链式存储结构。链式上相邻的存储结构不要求逻辑数据元素在物理上也相邻，它是用一组地址任意的存储单元来存放数据元素的值。因此，链式存储结构没有顺序存储结构所具有的在某些操作上的局限性，但却失去了可随机存取的特点，在链式存储结构上只能进行顺序存取。</li>
+</ol>
+<h3 id="单链表的表示"><a href="#单链表的表示" class="headerlink" title="单链表的表示"></a>单链表的表示</h3><p>&emsp;&emsp;链表中每一个结点包含存放数据元素值得数据域和存放指向逻辑上相邻结点的指针域。若一个结点中只包含一个指针域，则称此链表为单链表。</p>
+]]></content>
+      <categories>
+        <category>程序</category>
+      </categories>
+      <tags>
+        <tag>DS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>test</title>
     <url>/2020/03/13/test/</url>
     <content><![CDATA[<p><img src="/2020/03/13/test/sum.png" alt></p>
@@ -9,32 +26,79 @@
   <entry>
     <title>埋下一颗种子</title>
     <url>/2020/03/13/hello-world/</url>
-    <content><![CDATA[<p>&emsp;&emsp;大概花了四天时间，建立起了自己的第一个博客，虽然很简陋，但基本功能都实现了，勉强可以投入使用。建立期间也是走了不少弯路，最后选择了github pages + Hexo，毕竟免费还是香，不过这样也导致只能发挥普通博客的作用（也许还有其他用法，但目前技术水平有限）。markdown语法还不太熟，第一篇博文就当来练手了。</p>
+    <content><![CDATA[<p>&emsp;&emsp;大概花了四天时间，建立起了自己的第一个博客，<a id="more"></a>建立期间也是走了不少弯路，最后选择了github pages + Hexo，毕竟免费还是香，不过这样也导致只能发挥普通博客的作用（也许还有其他用法，但目前技术水平有限）。markdown语法还不太熟，第一篇博文就当来练手了。</p>
 <h2 id="初衷"><a href="#初衷" class="headerlink" title="初衷"></a>初衷</h2><hr>
 <p>&emsp;&emsp;做个人博客有几个原因吧，其一是可以记录自己学习的过程，有许多在实践过程中新学的知识没有经过系统的整理，最后要用的时候还得重新学习一遍，效率太低；其二是可以转移自身注意力（没办法闲着就想玩游戏），索性花时间来提升一下专注力，还能学点东西；其三是分享一下自己的想法或者学到的东西（虽然肯定达不到输出知识的水平，我能做的最多也就是搬运整合之类的工作），博客不是笔记本，它向全世界公开，欢迎每一个访客来这里交流自己的想法，若能对他人有所启发，本站的存在也就更有价值。</p>
-<h2 id="有待完善之处"><a href="#有待完善之处" class="headerlink" title="有待完善之处"></a>有待完善之处</h2><hr>
-<p>&emsp;&emsp;其实还挺多的，以后有时间再慢慢完善吧，有些问题挺棘手的，得从头开始（所以现在有点后悔没有选择NexT主题）。</p>
-<ul>
-<li>站内搜索（只搜索标题）</li>
-<li>标签系统（原作者做得很迷，没有发挥标签的作用）</li>
-<li>留言板</li>
-<li>图片lazy-load</li>
-<li>评论系统改进（目前需要翻墙才能看见）</li>
-<li>归档时间线</li>
-<li>各类统计<ul>
-<li>个体：字数统计、阅读时间等</li>
-<li>全局：文章数量、标签数量、分类数量等</li>
-<li>站点：浏览次数、访客数量等</li>
-</ul>
-</li>
-<li>目录无法随页面滚动，分级目录间隔过大，字数过多时不会自动换行</li>
-</ul>
+<h2 id="Hexo2-0"><a href="#Hexo2-0" class="headerlink" title="Hexo2.0"></a>Hexo2.0</h2><hr>
+<p>&emsp;&emsp;下定决心重装电脑后，把博客也整个翻修了一遍。果然用Hexo框架，就必须得用NexT主题，配置起来舒服多了，虽然还有许多功能没有尝试，但作为个人博客已经是绰绰有余了，美化工作就以后再说吧…</p>
 <h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><hr>
 <p>&emsp;&emsp;听过一句话：生命不息，折腾不止。虽然现在只能算个技术小白，要学的东西还很多，但既然起了头，就不能半途而废，若能养成写博的习惯，一直坚持下去，我现在埋下的这颗小小的种子，在未来也能结出累累硕果吧！</p>
 ]]></content>
       <categories>
         <category>杂谈</category>
       </categories>
+  </entry>
+  <entry>
+    <title>DS_week2</title>
+    <url>/2020/03/07/Data%20Structure2/</url>
+    <content><![CDATA[<h3 id="简单排序"><a href="#简单排序" class="headerlink" title="简单排序"></a>简单排序</h3><a id="more"></a>
+<ol>
+<li><p>简单冒泡排序</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BubbleSort</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">long</span>[] arr)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> temp = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;arr.length-<span class="number">1</span>;i++) &#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=arr.length-<span class="number">1</span>;j&gt;i;j--) &#123;</span><br><span class="line">                <span class="keyword">if</span>(arr[j]&lt;arr[j-<span class="number">1</span>]) &#123;</span><br><span class="line">                    temp = arr[j];</span><br><span class="line">                    arr[j] = arr[j-<span class="number">1</span>];</span><br><span class="line">                    arr[j-<span class="number">1</span>] = temp;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>简单选择排序</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SelectionSort</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">long</span>[] arr)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> k = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;arr.length-<span class="number">1</span>;i++) &#123;</span><br><span class="line">            k = i;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=i;j&lt;arr.length;j++) &#123;</span><br><span class="line">                <span class="keyword">if</span>(arr[j]&lt;arr[k]) &#123;</span><br><span class="line">                    k = j; </span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        temp = arr[i];</span><br><span class="line">        arr[i] = arr[k];</span><br><span class="line">        arr[k] = temp;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>直接插入排序</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">InsertSort</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">long</span>[] arr)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> temp = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> j = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;arr.length;i++) &#123;</span><br><span class="line">            temp = arr[i];            </span><br><span class="line">            <span class="keyword">for</span>(j=i-<span class="number">1</span>;j&gt;=<span class="number">0</span>&amp;&amp;arr[j]&gt;temp;j--) &#123;</span><br><span class="line">                arr[j+<span class="number">1</span>] = arr[j];</span><br><span class="line">            &#125;</span><br><span class="line">            arr[j+<span class="number">1</span>] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="线性表的定义"><a href="#线性表的定义" class="headerlink" title="线性表的定义"></a>线性表的定义</h3><p>线性表可逻辑地表示为$(a_0,a_1,a_2,…,a_{n-1})$,或$&lt;a_i,a_{i+1}&gt;$</p>
+<h3 id="线性表抽象数据类型的Java接口描述"><a href="#线性表抽象数据类型的Java接口描述" class="headerlink" title="线性表抽象数据类型的Java接口描述"></a>线性表抽象数据类型的Java接口描述</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Ilist</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">clear</span><span class="params">()</span></span>;                       <span class="comment">//置空</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span></span>;                  <span class="comment">//判空</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">length</span><span class="params">()</span></span>;                       <span class="comment">//求长度</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">get</span><span class="params">(<span class="keyword">int</span> i)</span></span>;                  <span class="comment">//取元素</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> i,Object x)</span></span>;        <span class="comment">//插入</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">insert_r</span><span class="params">(Object x)</span></span>;            <span class="comment">//尾插</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">remove</span><span class="params">(<span class="keyword">int</span> i)</span></span>;                 <span class="comment">//删除</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">remove_r</span><span class="params">()</span></span>;                    <span class="comment">//尾删</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">indexOf</span><span class="params">(Object x)</span></span>;              <span class="comment">//查找</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">display</span><span class="params">()</span></span>;                     <span class="comment">//输出</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">reverse</span><span class="params">()</span></span>;                     <span class="comment">//就地逆置</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">shit</span><span class="params">(<span class="keyword">int</span> k)</span></span>;                   <span class="comment">//右移k位</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="线性表的顺序存储"><a href="#线性表的顺序存储" class="headerlink" title="线性表的顺序存储"></a>线性表的顺序存储</h3><p>顺序存储：用一组地址连续的存储单元依次存放线性表中的数据元素的存储结构。<br>线性表的起始地址称为线性表的<strong>基地址</strong>。</p>
+<p>用顺序存储的线性表称为<strong>顺序表</strong>。</p>
+<p>所有数据的存储位置取决于第一个数据元素的存储位置：<br>$$Loc(a_i) = Loc(a_0) + i×C$$<br>其中C为：一个数据元素所占存储量</p>
+<p>顺序存储的特点：</p>
+<ol>
+<li>逻辑上相邻的数据元素，赋以相邻的存储位置；</li>
+<li>存储密度高；（存储密度 d=数据元素的值所需的存储空间/该元素实际所需的存储空间，顺序存储的存储密度为1）</li>
+<li>便于随机存取；</li>
+<li>不便于插入、删除操作；（会引起大量结点的移动）</li>
+</ol>
+<h3 id="顺序表类的描述"><a href="#顺序表类的描述" class="headerlink" title="顺序表类的描述"></a>顺序表类的描述</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SqList</span> <span class="keyword">implements</span> <span class="title">IList</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> Object[] listElem; </span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> curLen; </span><br><span class="line"></span><br><span class="line">    <span class="comment">//构造一个容量为maxSize的空顺序表函数      </span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">SqList</span> <span class="params">(<span class="keyword">int</span> maxSize)</span> </span>&#123; </span><br><span class="line">        listElem = <span class="keyword">new</span> Object[maxSize];</span><br><span class="line">        curLen = <span class="number">0</span>; </span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//顺序表置空函数</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">clear</span><span class="params">( )</span> </span>&#123;</span><br><span class="line">        curLen = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//判断当前线性表中数据元素个数是否为0</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> curLen == <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//求线性表中的数据元素个数</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">length</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> curLen; </span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//读取到线性表中的第i个数据元素并由函数返回其值</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Object <span class="title">get</span><span class="params">(<span class="keyword">int</span> i)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(i&lt;<span class="number">0</span>||i&gt;curLen-<span class="number">1</span>) </span><br><span class="line">			<span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">"第"</span> + i + <span class="string">"个元素不存在"</span>);</span><br><span class="line">		<span class="keyword">return</span> listElem[i];</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>插入：insert(int i,Object x)意思是在第i个数据元素之前插入一个值为x的数据元素</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> i, Object x)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(curLen==listElem.length) </span><br><span class="line">		<span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">"顺序表已满"</span>);</span><br><span class="line">	<span class="keyword">if</span>(i&lt;<span class="number">0</span>||i&gt;curLen) </span><br><span class="line">		<span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">"插入位置不合理"</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> j=curLen;j&gt;i;j--)</span><br><span class="line">		listElem[j] = listElem[j-<span class="number">1</span>]; <span class="comment">//插入位置及之后的元素后移</span></span><br><span class="line">	listElem[i] = x; </span><br><span class="line">	curLen++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>移动元素的平均次数为n/2,时间复杂度为O(n)</strong></p>
+<p>尾插：在线性表末尾添加新的数据元素</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">insert_r</span><span class="params">(Object x)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(curLen==listElem.length) </span><br><span class="line">		<span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">"顺序表已满"</span>);</span><br><span class="line">    listElem[curlen++] = x;</span><br><span class="line">    curLen++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>删除：将线性表中第i个数据元素删除</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">remove</span><span class="params">(<span class="keyword">int</span> i)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(i&lt;<span class="number">0</span>||i&gt;curLen-<span class="number">1</span>) </span><br><span class="line">		<span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">"删除位置不合理"</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> j=i;j&lt;curLen-<span class="number">1</span>;j++)</span><br><span class="line">		listElem[j] = listElem[j+<span class="number">1</span>]; <span class="comment">//被删除元素之后的元素左移</span></span><br><span class="line">	curLen--; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>移动元素的平均次数为(n-1)/2,时间复杂度为O(n)</strong></p>
+<p>尾删：删除顺序表的最后一个数据元素</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">remove_r</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(curLen==<span class="number">0</span>)</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">"顺序表已空！"</span>)</span><br><span class="line">    curLen--;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>查找：返回线性表中首次出现指定元素的索引，如果列表不包含该元素，则返回-1</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">indexOf</span><span class="params">(Object x)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> j = <span class="number">0</span>; <span class="comment">//j为计数器</span></span><br><span class="line">	<span class="keyword">while</span>(j&lt;curLen&amp;&amp;!listElem[j].equals(x))</span><br><span class="line">		<span class="comment">//从顺序表中的首结点开始查找，直到listElem[j]指向元素x或到达顺序表的表尾</span></span><br><span class="line">		j++;</span><br><span class="line">	<span class="keyword">if</span>(j&lt;curLen) <span class="comment">//判断j的位置是否位于表中</span></span><br><span class="line">		<span class="keyword">return</span> j; </span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		<span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>数据元素的平均比较次数为(n+1)/2,时间复杂度为O(n)</strong></p>
+<p>输出：输出线性表中的数据元素</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">display</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;curLen;j++)</span><br><span class="line">		System.out.print(listElem[j] + <span class="string">" "</span>);</span><br><span class="line">	System.out.println();  <span class="comment">//换行</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>就地逆置</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">reverse</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>,j=curLen-<span class="number">1</span>;i&lt;j;i++,j--) &#123;</span><br><span class="line">		Object temp = listElem[i];</span><br><span class="line">		listElem[i] = listElem[j];</span><br><span class="line">		listElem[j] = temp;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>顺序表右移k位</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">shit</span><span class="params">(<span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n = curLen, p = <span class="number">0</span>, i, j, l;</span><br><span class="line">    Object temp;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=k;i++)</span><br><span class="line">        <span class="keyword">if</span>(n%i==<span class="number">0</span>&amp;&amp;k%i==<span class="number">0</span>)  <span class="comment">//求n和k的最大公约数p</span></span><br><span class="line">            p=i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;p;i++) &#123;</span><br><span class="line">        j = i;</span><br><span class="line">        l = (i+n-k)%n;</span><br><span class="line">        temp = listElem[i];</span><br><span class="line">        <span class="keyword">while</span>(l!=i) &#123;</span><br><span class="line">            listElem[j] = listElem[l];</span><br><span class="line">            j = l;</span><br><span class="line">            l = (j+n-k)%n;</span><br><span class="line">        &#125;   <span class="comment">//循环右移一步</span></span><br><span class="line">    listElem[j] = temp;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>程序</category>
+      </categories>
+      <tags>
+        <tag>DS</tag>
+      </tags>
   </entry>
   <entry>
     <title>DS_week1</title>
@@ -199,8 +263,7 @@ $T(n)=O(n)$</li>
 <br><br>
 
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><hr>
-<h3 id="接触海猫的过程"><a href="#接触海猫的过程" class="headerlink" title="接触海猫的过程"></a>接触海猫的过程</h3><p>&emsp;&emsp;首次接触海猫应该是在高一寒假，当时是奔着悬疑推理去的，然而由于动画版质量不高，看到最后也只留下了恐怖猎奇的印象。不过不得不说，海猫的背景设定是相当对我口味的:暴风雪山庄模式，西洋风格的人物设计等…因此很早就下定决心要推完海猫原作。当时的动力只是解开前四个ep的谜题而已，毕竟我完全想不出如何破解那一大堆密室 <del>所以其实我早就是个剧情党了</del>，中途因为一直没找到合适的时间，耽搁了很久，正式开始推海猫原作是在大二上，断断续续花了一个多月的时间推完了。虽然不是一气呵成，导致有点玩后面忘前面，但空出了沉淀的时间，让我更多地去思考作者想要传达的东西，心态也由原本的追求 <strong>How done it</strong> 转变为了追求 <strong>Why done it</strong> ，即从“推理党”变成了“剧情党”。即便是写下这篇博客的现在，有些谜题依然徘徊在我的脑海里，毕竟07自己在某些问题上也没有给出一个明确的答复。我与海猫的缘分不会到此为止，等看完漫画，推完HD版再回来补充这篇博客，给海猫的故事画上一个完满的句号。</p>
-<a id="more"></a>
+<h3 id="接触海猫的过程"><a href="#接触海猫的过程" class="headerlink" title="接触海猫的过程"></a>接触海猫的过程</h3><p>&emsp;&emsp;首次接触海猫应该是在高一寒假，当时是奔着悬疑推理去的，然而由于动画版质量不高，看到最后也只留下了恐怖猎奇的印象。不过不得不说，海猫的背景设定是相当对我口味的:<a id="more"></a>暴风雪山庄模式，西洋风格的人物设计等…因此很早就下定决心要推完海猫原作。当时的动力只是解开前四个ep的谜题而已，毕竟我完全想不出如何破解那一大堆密室 <del>所以其实我早就是个剧情党了</del>，中途因为一直没找到合适的时间，耽搁了很久，正式开始推海猫原作是在大二上，断断续续花了一个多月的时间推完了。虽然不是一气呵成，导致有点玩后面忘前面，但空出了沉淀的时间，让我更多地去思考作者想要传达的东西，心态也由原本的追求 <strong>How done it</strong> 转变为了追求 <strong>Why done it</strong> ，即从“推理党”变成了“剧情党”。即便是写下这篇博客的现在，有些谜题依然徘徊在我的脑海里，毕竟07自己在某些问题上也没有给出一个明确的答复。我与海猫的缘分不会到此为止，等看完漫画，推完HD版再回来补充这篇博客，给海猫的故事画上一个完满的句号。</p>
 <h3 id="整体评价"><a href="#整体评价" class="headerlink" title="整体评价"></a>整体评价</h3><p>&emsp;&emsp;海猫作为后设小说、后推理小说，实验性质是非常强的，龙骑士07也可以说是拼尽全力想把这个故事讲好，但海猫既然不是传统意义上的推理小说，必然会寒了许多从寒蝉过来的老推理玩家以及被出题篇的噱头吸引而来的大批“推理党”的心（也怪07自己为了提升名气，宣传与实物不符）。预期与实际不符，再加上07坚持“真实并不重要，背后的动机才重要”的观点，开群嘲将执着于推理真相的玩家丑化为摧毁黄金乡的黑山羊，终于群愤四起，历经数年积累起的人气评价轰然倒塌，渐渐被世人所遗忘。诚然，我也是被出题篇吸引而来，但因为我预先就知道了海猫是一部很特殊的作品，在推理上并没有给予很高的期望，同时就剧情而言，海猫在我心目中是无愧的神作。因此我认为海猫不是一部完美的作品，但它是一次勇敢的尝试，是一部张扬了作者个性的作品，是一场关于爱与希望的梦。</p>
 <h3 id="几个疑点"><a href="#几个疑点" class="headerlink" title="几个疑点"></a>几个疑点</h3><p>&emsp;&emsp;海猫原作还是比较隐晦的，许多地方都没解释清楚，网络观点也各不相同，很难找到可以完全自圆其说的，希望在看完漫画之后能解开这些疑问。<br>疑点：</p>
 <ol>
