@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>DS_week3</title>
-    <url>/2020/03/14/Data%20Structure3/</url>
+    <url>/2020/03/15/Data%20Structure3/</url>
     <content><![CDATA[<h3 id="顺序表的局限性"><a href="#顺序表的局限性" class="headerlink" title="顺序表的局限性"></a>顺序表的局限性</h3><a id="more"></a>
 <ol>
 <li>若要为线性表扩充存储空间，则需重新创建一个地址连续的更大的存储空间，并把原有的数据元素都复制到新的存储空间中。</li>
