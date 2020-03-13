@@ -7,7 +7,7 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Hello World</title>
+    <title>埋下一颗种子</title>
     <url>/2020/03/13/hello-world/</url>
     <content><![CDATA[<p>&emsp;&emsp;大概花了四天时间，建立起了自己的第一个博客，虽然很简陋，但基本功能都实现了，勉强可以投入使用。建立期间也是走了不少弯路，最后选择了github pages + Hexo，毕竟免费还是香，不过这样也导致只能发挥普通博客的作用（也许还有其他用法，但目前技术水平有限）。markdown语法还不太熟，第一篇博文就当来练手了。</p>
 <h2 id="初衷"><a href="#初衷" class="headerlink" title="初衷"></a>初衷</h2><hr>
