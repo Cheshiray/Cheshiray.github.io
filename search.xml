@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>测试</title>
+    <url>/2020/08/09/test/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+  </entry>
+  <entry>
     <title>DS_week3</title>
     <url>/2020/03/18/Data%20Structure3/</url>
     <content><![CDATA[<h3 id="顺序表的局限性"><a href="#顺序表的局限性" class="headerlink" title="顺序表的局限性"></a>顺序表的局限性</h3><a id="more"></a>
@@ -9,7 +17,15 @@
 <li>因为顺序存储要求逻辑上相邻的数据元素，在物理存储位置上也是相邻的，这就使得要增删数据元素会引起平均约一半的数据元素的移动。<br>&emsp;&emsp;所以，顺序表最适合表示“静态”线性表，即线性表一旦形成以后，就很少进行插入与删除操作，例如文件的目录，一般进行查找操作。对于需要频繁执行插入和删除操作的“动态”线性表，通常采用链式存储结构。链式上相邻的存储结构不要求逻辑数据元素在物理上也相邻，它是用一组地址任意的存储单元来存放数据元素的值。因此，链式存储结构没有顺序存储结构所具有的在某些操作上的局限性，但却失去了可随机存取的特点，在链式存储结构上只能进行顺序存取。</li>
 </ol>
 <h3 id="单链表的表示"><a href="#单链表的表示" class="headerlink" title="单链表的表示"></a>单链表的表示</h3><p>&emsp;&emsp;链表中每一个结点包含存放数据元素值得数据域和存放指向逻辑上相邻结点的指针域。若一个结点中只包含一个指针域，则称此链表为单链表。</p>
-<img src="/2020/03/18/Data%20Structure3/1.png" class title="单链表的存储示意图">]]></content>
+<img src="/2020/03/18/Data%20Structure3/1.png" class title="单链表的存储示意图">
+<p>&emsp;&emsp;以线性表中第一个数据元素的存储地址作为线性表的起始地址，称作线性表的头指针，一个单链表就是由它的头指针head来唯一标识它。<br>&emsp;&emsp;单链表中的最后一个结点（也称为尾结点）没有后继，所以它的指针域的值为空指针Null。<br>&emsp;&emsp;有时候为了操作方便，在第一个结点之前虚加一个“头结点”，头结点的数据域一般不存放具体的值，指针域存放指向第一个结点（也称为首结点的）指针，指向头结点的指针为单链表的头指针。若线性表为空表，则头指针的指针域为“空”。</p>
+<img src="/2020/03/18/Data%20Structure3/2.png" class title="带头结点的单链表的存储示意图">
+
+<h3 id="结点类的描述"><a href="#结点类的描述" class="headerlink" title="结点类的描述"></a>结点类的描述</h3><p>结点类由两部分构成，其中data是数据域，用来存放数据元素的值，next是指针域，用来存放后继结点的地址。以下是结点类的描述：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Node</span> </span>&#123;</span><br><span class="line">	<span class="keyword">public</span> Object data; <span class="comment">// 存放结点值</span></span><br><span class="line">	<span class="keyword">public</span> Node next; <span class="comment">// 后继结点的引用</span></span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Node</span><span class="params">()</span> </span>&#123; <span class="comment">// 无参数时的构造函数</span></span><br><span class="line">	    <span class="keyword">this</span>(<span class="keyword">null</span>,<span class="keyword">null</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Node</span><span class="params">(Object data)</span> </span>&#123; <span class="comment">// 构造值为data的结点</span></span><br><span class="line">		<span class="keyword">this</span>(data,<span class="keyword">null</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Node</span><span class="params">(Object data, Node next)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.data = data;</span><br><span class="line">		<span class="keyword">this</span>.next = next;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="单链表类的描述"><a href="#单链表类的描述" class="headerlink" title="单链表类的描述"></a>单链表类的描述</h3><p>由于单链表只需一个头指针就能唯一标识它，所以单链表类的成员变量只需设置一个头指针即可。以下是单链表类的描述：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LinkList</span> <span class="keyword">implements</span> <span class="title">Ilist</span> </span>&#123;</span><br><span class="line">	<span class="keyword">public</span> Node head;                           <span class="comment">//单链表的头指针</span></span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">LinkList</span><span class="params">()</span> </span>&#123;                         <span class="comment">//单链表的构造函数     </span></span><br><span class="line">		head = <span class="keyword">new</span> Node();                      <span class="comment">//初始化头结点</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">LinkList</span><span class="params">(<span class="keyword">int</span> n,<span class="keyword">boolean</span> Order)</span> <span class="keyword">throws</span> Exception </span>&#123;  <span class="comment">//构建一个长度为n的单链表</span></span><br><span class="line">		<span class="keyword">this</span>();</span><br><span class="line">		<span class="keyword">if</span> (Order)</span><br><span class="line">			creater(n);</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>程序</category>
       </categories>
